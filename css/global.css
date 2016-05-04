@@ -24,6 +24,23 @@ This is my favorite site for playing with web colors: http://www.color-hex.com
   margin-bottom: 1em;
 }
 
+.funny-faces {
+  font-weight: 400;
+  font-size: 3.5em;
+  color: white;
+}
+ol li.lead {
+  margin-top: 1.5em;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+footer {
+  background: #e7e7e7;
+  padding: 1em;
+  border-top: 2px solid lightgray;
+  margin-top: 3em;
+}
 /* Responsive iFrame */
 
 .responsive-iframe-container {
