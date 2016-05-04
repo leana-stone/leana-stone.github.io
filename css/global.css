@@ -1,0 +1,357 @@
+
+/* ======================
+Styles Erica Added
+====================== */
+
+/*
+This is my favorite site for playing with web colors: http://www.color-hex.com
+*/
+
+.navbar-default, .navbar-nav, .navbar-header, #navbar .navbar-collapse.collapse {
+  /*background-color: rgba(243,243,243, 0.90);*/
+  background-color: #F3F3F3;
+  border-color: transparent;
+ /* background: -webkit-linear-gradient(left, rgba(221, 221, 221, 0.09), rgba(221, 221, 221, 1));*/ /* For Safari 5.1 to 6.0 */
+  /*background: -o-linear-gradient(bottom, rgba(221, 221, 221, 1), rgba(221, 221, 221, 0));*/ /* For Opera 11.1 to 12.0 */
+  /*background: -moz-linear-gradient(bottom, rgba(221, 221, 221, 1), rgba(255,0,0,0)); *//* For Firefox 3.6 to 15 */
+  /*background: linear-gradient(to right, rgba(221, 221, 221, 1), rgba(221, 221, 221, 0));*/ /* Standard syntax (must be last) */
+}
+
+.center-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 1em;
+}
+
+/* Responsive iFrame */
+
+.responsive-iframe-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.responsive-iframe-container iframe,
+.vresponsive-iframe-container object,
+.vresponsive-iframe-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+}
+
+.lead2 {
+  font-size: 1.2em;
+}
+
+ /* MailChimp form style overrides */
+
+#mc_embed_signup{
+  background:#fff;
+  clear:left;
+  font:14px Helvetica,Arial,sans-serif;
+  width:70%;
+}
+.mail {
+  margin-left: 10%;
+  margin-right: 20%;
+}
+
+.social:hover, .social:focus {
+  background-color: rgba(135,234,243, 1);
+  opacity: .7
+}
+
+/* =============================== @Media Queries Start ============================= */
+
+/* Extra small devices (phones, less than 768px -> "col-xs") */
+/* No media query since this is the default in Bootstrap */
+@media (max-width: 767px) {
+  /*.navbar-brand {
+    visibility: hidden;
+    display: none;
+  }*/
+  #navbutton:before {
+    background-color: rgba(221, 221, 221, 1);
+  }
+  #myCarousel {
+    visibility: hidden;
+    display: none;
+  }
+  #static-header {
+    visibility: visible;
+    display: block;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    width: 100%;
+    max-height: 200px;
+
+  }
+  .navbar-default {
+    background: rgba(221, 221, 221, 0);
+    /*text-align: right;*/
+  }
+  .nav.navbar-nav {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+/*  .featurette-image {
+    visibility: hidden;
+    display: none;
+  }*/
+  #list-cal {
+    visibility: visible;
+  }
+  #month-cal {
+    visibility: hidden;
+    display: none;
+  }
+  #class-content-large{
+    visibility: visible;
+    display: block;
+  }
+  #class-content-small {
+    visibility: hidden;
+    display: none;
+  }
+  .brand-size {
+    font-size: 1.5em;
+  }
+}
+
+
+/* Small devices (tablets, 768px and up -> "col-sm") */
+@media (min-width: 768px) and (max-width: 991px) {
+  /*.navbar-brand {
+    visibility: hidden;
+    display: none;
+  }*/
+  #navbutton:before {
+    background: rgba(221, 221, 221, 0.70);
+  }
+  #myCarousel {
+    visibility: hidden;
+    display: none;
+  }
+  #static-header {
+    visibility: visible;
+    display: block;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    width: 100%;
+    max-height: 200px;
+
+  }
+/*  .featurette-image {
+    visibility: hidden;
+    display: none;
+  }*/
+  #list-cal {
+    visibility: visible;
+    width: 90%;
+    height: 100%;
+    margin-right: 0px;
+    margin-left: 10%;
+  }
+  #month-cal {
+    visibility: hidden;
+    display: none;
+  }
+  #class-content-large{
+    visibility: visible;
+    display: block;
+  }
+  #class-content-small {
+    visibility: hidden;
+    display: none;
+  }
+  .brand-size {
+    font-size: 2em;
+  }
+}
+
+/* Medium devices (desktops, 992px and up -> "col-md") */
+@media (min-width: 992px) and (max-width: 1199px) {
+/*  .featurette-image {
+    visibility: hidden;
+    display: none;
+  }*/
+  #list-cal {
+    visibility: visible;
+    width: 90%;
+    height: 100%;
+    margin-right: 0px;
+    margin-left: 10%;
+  }
+  #month-cal {
+    visibility: hidden;
+    display: none;
+  }
+  #static-header {
+    visibility: hidden;
+    display: none;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  #class-content-large{
+    visibility: visible;
+    display: block;
+  }
+  #class-content-small {
+    visibility: hidden;
+    display: none;
+  }
+  .brand-size {
+    font-size: 2em;
+  }
+}
+
+
+/* Large devices (large desktops, 1200px and up -> "col-lg") */
+@media (min-width: 1200px) {
+  #list-cal {
+    visibility: hidden;
+    display: none;
+  }
+  #month-cal {
+    visibility: visible;
+  }
+  #static-header {
+    visibility: hidden;
+    display: none;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  #myCarousel .carousel-inner .item img {
+    width: 2560px;
+  }
+  #class-content-large{
+    visibility: visible;
+    display: block;
+  }
+  #class-content-small {
+    visibility: hidden;
+    display: none;
+  }
+  .brand-size {
+    font-size: 2em;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .caption-shrink h1 {
+    /*visibility: hidden;
+    display: none;*/
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 620px) {
+  #class-content-large{
+    visibility: hidden;
+    display: none;
+  }
+  #class-content-small {
+    visibility: visible;
+    display: block;
+  }
+}
+/* =============================== @Media Queries END ============================= */
+
+
+
+
+/* ===============================
+All styles below for image hover effect
+http://miketricking.github.io/dist/
+=============================== */
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+
+.hovereffect:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');
+  filter: grayscale(1) blur(3px);
+  -webkit-filter: grayscale(1) blur(3px);
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hovereffect a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  border: 1px solid #fff;
+  margin: 50px 0 0 0;
+  background-color: transparent;
+}
+
+.hovereffect a.info:hover {
+  box-shadow: 0 0 5px #fff;
+}
+
+.hovereffect a.info, .hovereffect h2 {
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.hovereffect:hover a.info, .hovereffect:hover h2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+/* ===============================
+End Hover effect styles
+=============================== */
